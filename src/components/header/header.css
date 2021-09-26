@@ -1,0 +1,44 @@
+.tittle{
+    color: white;
+  font-size: 2.5rem;
+   
+    
+    
+}
+.contact-btn{
+    margin: 2rem 0 0 0 ;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border: none;
+    border: 1px solid red;
+    color: red;
+    transition: .5s ease;
+}
+.contact-btn:hover{
+    background: red;
+    color: white;
+    transition: .5s ease;
+}
+.typed-text{
+    color: yellow;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    height: 90vh;
+    
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url(https://i1.wp.com/cutewallpaper.org/21/pc-4k-wallpapers/BEST-WALLPAPER-Wallpaper-Pc-Gaming-4k.jpg);
+}
+@media (max-width:400px){
+
+.typed-text{
+    font-size: 1.5rem;}
+}

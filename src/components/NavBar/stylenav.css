@@ -1,0 +1,23 @@
+.logo{
+height: 60px;
+margin-left: 100px;
+filter: brightness(100);
+margin-right: 55rem;
+}
+.nav-link{
+color: aliceblue !important; 
+text-transform: capitalize;
+margin: 0 2rem 0 2rem;
+font-size: 1.2rem;   
+}
+@media (max-width:400px){
+    .logo{
+        margin-left:10px;
+        margin-right: 0rem;
+    }
+    .nav-link{
+        margin-left:18rem;
+        margin-right: 0;
+    }
+    
+}
