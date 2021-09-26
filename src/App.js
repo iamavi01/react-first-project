@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css"
-import "/home/abhithakur/portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
