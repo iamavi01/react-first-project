@@ -2,6 +2,8 @@ import React from "react";
 import "./stylenav.css";
 const NavBar = () => {
   return (
+    <section className="navcontain">
+
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <a className="navbar-brand" href="#">
         <img className="logo"src="https://nrskarmakar.com/images/company-logo/default-logo.png"/>
@@ -43,6 +45,7 @@ const NavBar = () => {
         </ul>
       </div>
     </nav>
+    </section>
   );
 };
 export default NavBar;

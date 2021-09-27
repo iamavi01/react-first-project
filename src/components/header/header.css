@@ -13,6 +13,8 @@
     border: 1px solid red;
     color: red;
     transition: .5s ease;
+    z-index: ;    
+    
 }
 .contact-btn:hover{
     background: red;
@@ -25,13 +27,14 @@
     text-transform: capitalize;
 }
 .header{
+    position: absolute;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    z-index: 1;
     height: 90vh;
-    
+    width: 100%;
     background-position: center;
     background-size: cover;
     overflow: hidden;
