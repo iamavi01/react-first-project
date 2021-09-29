@@ -4,8 +4,12 @@ import Typed from "react-typed";
 
 
 function Header(){
+    const poopup=()=>{
+        document.getElementById("sendmessagebutton").style.zIndex = "10";
+    }
     return(
         <>
+        
         <section className="header">
 <div>
         <h1 className="tittle">
@@ -22,7 +26,7 @@ function Header(){
         />
         </div>
         <div >
-            <button className="contact-btn">Send Message</button>
+            <button onClick={poopup}  className="contact-btn">Send Message</button>
         </div>
         </section>
         </>

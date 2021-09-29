@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;}
+.formcontainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(000, 000, 000, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+   
+    
+}
+.textboxes{
+    background:transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    width: 25rem;
+    padding-left: 10px;
+height: 2rem;}
+form{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    background-color: white ;
+    height: 40rem;
+    width: 40rem;
+    position: relative;
+}
+.closebtn{
+    color: red;
+    font-weight: bolder;
+    font-size: 4rem;
+    transform: rotate(45deg);
+    position: absolute;
+ top: 1rem;
+ left: 35rem;
+    cursor: pointer;
+}
+.messagebox{
+    height: 10rem;
+    padding-top: 20px;
+   
+}
+::placeholder {
+    color: #444;
+    font-size: .7rem;
+    text-transform: uppercase;
+  }
+.sendbtn{
+    background: transparent;
+    color: green;
+    display: inline-block;
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    border: 2px solid green;
+  }
+  .titttle{
+      text-shadow:-10 -10 rgba(0, 0, 0,.5) ;
+      margin-top: -8rem;
+      font-size: 3rem;
+      margin-bottom: .5rem;
+  }
+  .sometext{
+      margin-top: 0;
+      margin-left:3rem;
+      margin-right: 2rem; 
+      margin-bottom: 2rem;
+      text-align: center;
+  }

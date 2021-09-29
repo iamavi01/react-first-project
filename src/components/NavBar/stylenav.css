@@ -1,9 +1,10 @@
+
 nav{
     z-index: 2;
 }
 .logo{
 height: 60px;
-margin-left: 100px;
+/* margin-left: ; */
 filter: brightness(100);
 margin-right: 55rem;
 }
@@ -12,6 +13,9 @@ color: aliceblue !important;
 text-transform: capitalize;
 margin: 0 2rem 0 2rem;
 font-size: 1.2rem;   
+}
+.navcontain{
+    width: 100%;
 }
 
 @media (max-width:400px){
