@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 
+
 const Contactus = (props) => {
   const form = useRef();
 
@@ -24,12 +25,12 @@ const Contactus = (props) => {
         }
       );
   };
-  const closepoopup = () => {
-    document.getElementById("sendmessagebutton").style.zIndex = "-1";
-  };
-  return (
+  // const closepoopup = () => {
+  //   document.getElementById("sendmessagebutton").style.zIndex = "-1";
+  // };
+  return (props.target)?(
     <>
-      <div className="formcontainer" id="sendmessagebutton">
+      <div className="formcontainer" >
         <form classNAme="formcover" ref={form} onSubmit={sendEmail}>
           <div className="titttle">Contact us</div>
           <p className="sometext">
@@ -39,7 +40,7 @@ const Contactus = (props) => {
           </p>
           <div
             id="sendmessagebutton"
-            onClick={closepoopup}
+            onClick={()=>{props.setClose(false)}}
             className="closebtn"
           >
             +
@@ -71,14 +72,14 @@ const Contactus = (props) => {
             />
           </div>
           <div>
-            <button type="submit" className="sendbtn" onClick={closepoopup}>
+            <button type="submit" className="sendbtn" >
               Send
             </button>
           </div>
         </form>
       </div>
-    </>
-  );
+    </>):null;
+ 
 };
 export default Contactus;
 // import React, { useState } from 'react';

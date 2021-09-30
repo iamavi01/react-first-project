@@ -1,14 +1,16 @@
 import React from 'react';
 import "./header.css";
+import { useState } from 'react'
 import Typed from "react-typed";
+import Contact from '../NavBar/contact/Contact';
+
 
 
 function Header(){
-    const poopup=()=>{
-        document.getElementById("sendmessagebutton").style.zIndex = "10";
-    }
-    return(
-        <>
+   
+    const [triggerPopUp,setTriggerPopup]=useState(false) 
+       return(
+               <>
         
         <section className="header">
 <div>
@@ -26,10 +28,14 @@ function Header(){
         />
         </div>
         <div >
-            <button onClick={poopup}  className="contact-btn">Send Message</button>
+            <button onClick={()=>setTriggerPopup(!triggerPopUp)}  className="contact-btn">Send Message</button>
         </div>
         </section>
+          
+<Contact target={triggerPopUp} setClose={setTriggerPopup}>
+  </Contact>
         </>
+        
 
     )
 }
